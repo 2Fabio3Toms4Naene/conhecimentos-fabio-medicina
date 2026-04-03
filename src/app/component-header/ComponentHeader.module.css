@@ -1,0 +1,58 @@
+.header{
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.containerLogo, .header{
+    display: flex;
+    align-items: center;
+}
+.containerLogo{
+    gap: 5px;
+}
+.logo{
+    background: none;
+    filter: invert(1);
+}
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+.containerSearch{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.iconSearch{
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+.inputSearch{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 0.875em;
+}
+.containerTheme{
+    margin-right: 50px;
+}
+.buttonTheme{
+    border: none;
+    background: none;
+}
+.iconTheme{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.iconInvert{
+    filter: invert(1);
+}
