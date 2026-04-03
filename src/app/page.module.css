@@ -1,0 +1,14 @@
+/*ESTILOS DA TRACA DE TEMA*/
+.dark {
+  background-color: #121212;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #000;
+}
+/*ESTILOS DO MAIN*/
+.main {
+  width: 1024px;
+  margin: 0 auto;
+}

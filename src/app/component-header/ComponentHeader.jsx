@@ -1,13 +1,17 @@
+'use client';
 import styles from './ComponentHeader.module.css';
+import stylesPage from '../page.module.css';
 import Image from 'next/image';
+import { useTheme } from '../themeContext';
 import logo from '../../../public/logo.jpeg';
 import { FaSearch } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
 import { GoSun } from "react-icons/go";
 
-export default function ComponentHeader({ theme, toggleTheme }) {
+export default function ComponentHeader() {
+    const { theme, toggleTheme } = useTheme();
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${theme ? stylesPage.dark : stylesPage.light}`}>
             <div className={styles.containerLogo}>
                 <Image src={logo} alt="Logo" width={50} height={50} className={theme ? styles.iconInvert : ''}/>
                 <h1 lang="en" className={styles.title}>Fábio Knowlodge</h1>
