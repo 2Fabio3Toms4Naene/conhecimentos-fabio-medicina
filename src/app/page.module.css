@@ -1,3 +1,8 @@
+/*ESTILOS GERAIS*/
+.containerPage {
+  width: 100%;
+  height: 100vh;
+}
 /*ESTILOS DA TRACA DE TEMA*/
 .dark {
   background-color: #121212;
