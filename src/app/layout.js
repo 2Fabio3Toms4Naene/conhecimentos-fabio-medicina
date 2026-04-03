@@ -1,6 +1,5 @@
 import "./globals.css";
-import styles from './page.module.css'
-import { ThemeProvider, useTheme } from "./themeContext";
+import { StateProvider} from "./statas";
 import ComponentHeader from "./component-header/ComponentHeader";
 
 export const metadata = {
@@ -9,13 +8,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ThemeProvider>
+    <StateProvider>
     <html lang="pt">
       <body>
         <ComponentHeader />
         {children}
       </body>
     </html>
-    </ThemeProvider>
+    </StateProvider>
   );
 }

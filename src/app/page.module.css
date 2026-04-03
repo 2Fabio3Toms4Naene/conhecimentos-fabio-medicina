@@ -1,8 +1,5 @@
 /*ESTILOS GERAIS*/
-.containerPage {
-  width: 100%;
-  height: 100vh;
-}
+
 /*ESTILOS DA TRACA DE TEMA*/
 .dark {
   background-color: #121212;
@@ -16,4 +13,13 @@
 .main {
   width: 1024px;
   margin: 0 auto;
+}
+/*ESTILOS DA SEÇÃO DE LIVROS*/
+.sectionBooks {
+  width: 100%;
+  padding: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
