@@ -13,7 +13,7 @@
     height: 200px;
 }
 .title {
-    font-size: 18px;
+    font-size: calc(0.800em + 0.5vw);
     font-weight: bold;
 }
 .link {
@@ -28,15 +28,3 @@
     background-color: sienna;
     color: #fff;
 }
-/* RESPONSIVIDADE 320px */
-/* @media  only screen and (max-width: 320px) {
-    .card {
-        width: 100%;
-    }
-    .title {
-        font-size: 16px;
-    }
-    .link {
-        font-size: 12px;
-    }
-} */
