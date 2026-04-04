@@ -13,7 +13,7 @@ export default function ComponentHeader() {
     return (
         <header className={`${styles.header} ${theme ? stylesPage.dark : stylesPage.light}`}>
             <div className={styles.containerLogo}>
-                <Image src={logo} alt="Logo" width={50} height={50} className={theme ? styles.iconInvert : ''}/>
+                <Image src={logo} alt="Logo" width={50} height={50} className={`${styles.logoHeader} ${theme ? styles.iconInvert : ''}`} />
                 <h1 lang="en" className={styles.title}>Fábio Knowlodge</h1>
             </div>
             <div className={styles.containerSearch}>

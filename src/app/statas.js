@@ -1,7 +1,7 @@
 'use client';
 import { createContext, useState, useContext } from "react";
 import { arrayCardObjects } from "./array-card-objects";
-import { filterByTypedWord } from "@/filter";
+import { filterByTypedWord } from "@/app/filter";
 
 const StateContext = createContext();
 

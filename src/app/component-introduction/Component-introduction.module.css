@@ -16,3 +16,17 @@
 .description {
     font-size: 1.1em;
 }
+/* RESPONSIVIDADE 32px */
+@media (max-width: 32em) {
+    .containerIntrodunction {
+        padding-top: 20px;
+        gap: 5px;
+    }
+    .title {
+        font-size: 1em;
+    }
+    .description {
+        font-size: 0.870em;
+        text-align: center;
+    }
+}
