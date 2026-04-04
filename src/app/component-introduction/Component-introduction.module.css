@@ -1,5 +1,6 @@
 .containerIntrodunction {
     width: 100%;
+    max-width: 1024px;
     padding-top: 30px;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +17,8 @@
 .description {
     font-size: 1.1em;
 }
-/* RESPONSIVIDADE 32px */
-@media  only screen and (max-width: 320px) {
+/* RESPONSIVIDADE 32px*/
+@media  only screen and (max-width: 1023px) {
     .containerIntrodunction {
         padding-top: 20px;
         gap: 5px;
@@ -29,4 +30,4 @@
         font-size: 0.870em;
         text-align: center;
     }
-}
+} 

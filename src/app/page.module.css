@@ -11,27 +11,16 @@
 }
 /*ESTILOS DO MAIN*/
 .main {
-  width: 1024px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
 }
 /*ESTILOS DA SEÇÃO DE LIVROS*/
 .sectionBooks {
   width: 100%;
+  max-width: 1024px;
   padding: 50px 0 100px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-/* RESPONSIVIDADE 320PX */
-@media only screen and (max-width: 320px) {
-  .main {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .sectionBooks {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
 }
