@@ -24,7 +24,7 @@
   gap: 20px;
 }
 /* RESPONSIVIDADE 320PX */
-@media (max-width: 320px) {
+@media  (min-width: 320px) and (max-width: 320px) {
   .main {
     width: 100%;
     padding: 0 10px;
