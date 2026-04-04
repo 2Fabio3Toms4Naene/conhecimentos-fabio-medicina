@@ -13,11 +13,13 @@
 .main {
   width: 100%;
   max-width: 1024px;
+  margin: auto;
 }
 /*ESTILOS DA SEÇÃO DE LIVROS*/
 .sectionBooks {
   width: 100%;
   max-width: 1024px;
+  min-height: 100vh;
   padding: 50px 0 100px 0;
   display: flex;
   justify-content: center;

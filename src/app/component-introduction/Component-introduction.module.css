@@ -1,20 +1,21 @@
 .containerIntrodunction {
-    width: 100%;
-    max-width: 1024px;
-    padding-top: 30px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+  width: 100%;
+  max-width: 1024px;
+  padding-top: 30px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
-.containerTitle, .containerIntrodunction {
-    display: flex;
-    align-items: center;
+.containerTitle,
+.containerIntrodunction {
+  display: flex;
+  align-items: center;
 }
 .title {
-    font-size: calc(0.700em + 1.5vw);
-    font-weight: bold;;
+  font-size: calc(0.7em + 1.5vw);
+  font-weight: bold;
 }
 .description {
-    font-size: calc(0.600em + 0.80vw);
-    text-align: center;
+  font-size: calc(0.6em + 0.8vw);
+  text-align: center;
 }

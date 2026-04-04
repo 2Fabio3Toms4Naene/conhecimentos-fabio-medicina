@@ -1,0 +1,57 @@
+.main {
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.titleDiseases {
+  text-align: center;
+  font-size: calc(0.7em + 1.5vw);
+}
+.containerDisease {
+  width: 100%;
+  padding-top: 30px;
+  padding: 30px 10px;
+}
+
+.disease {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: calc(0.8em + 1vw);
+  background: none;
+  color: steelblue;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.arrowOpen {
+  transform: rotate(90deg);
+}
+
+.arrowClosed {
+  transform: rotate(0deg);
+}
+
+.contentClosed {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+
+.contentOpen {
+  max-height: 200px; /* ajusta conforme necessário */
+  padding: 10px;
+}

@@ -1,81 +1,82 @@
-.header{
-    width: 100%;
-    padding: 20px 0;
-    justify-content: space-between;
+.header {
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
 }
-.containerLogo, .header{
-    display: flex;
-    align-items: center;
+.containerLogo,
+.header {
+  display: flex;
+  align-items: center;
 }
-.containerLogo{
-    gap: 5px;
+.containerLogo {
+  gap: 5px;
 }
-.logo{
-    background: none;
-    filter: invert(1);
+.logo {
+  background: none;
+  filter: invert(1);
 }
 .title {
-    font-size: calc(0.500em + 2.5vw);
-    font-weight: bold;
+  font-size: calc(0.5em + 2.5vw);
+  font-weight: bold;
 }
-.containerSearch{
+.containerSearch {
+  width: 95%;
+  max-width: 500px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.iconSearch {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+}
+.inputSearch {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 0.875em;
+}
+.containerTheme {
+  margin-right: 50px;
+}
+.buttonTheme {
+  border: none;
+  background: none;
+}
+.iconTheme {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.iconInvert {
+  filter: invert(1);
+}
+/* RESPONSIVIDADE 320px */
+@media only screen and (max-width: 1023px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    position: relative;
+  }
+  .containerSearch {
     width: 95%;
-    max-width: 500px;
+    margin: auto;
+  }
+  .logoHeader {
+    width: 30px;
     height: 30px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-}
-.iconSearch{
-    width: 20px;
-    height: 20px;
-    margin-left: 2px;
-}
-.inputSearch{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    font-size: 0.875em;
-}
-.containerTheme{
-    margin-right: 50px;
-}
-.buttonTheme{
-    border: none;
-    background: none;
-}
-.iconTheme{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-.iconInvert{
-    filter: invert(1);
-}
-/* RESPONSIVIDADE 320px */ 
-@media  only screen and (max-width: 1023px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 0;
-        position: relative;
-    }
-    .containerSearch {
-        width: 95%;
-        margin: auto;
-    }
-    .logoHeader {
-        width: 30px;
-        height: 30px;
-    }
-    .buttonTheme {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
+  }
+  .buttonTheme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
