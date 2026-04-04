@@ -24,7 +24,7 @@
     color: #fff;
 }
 /* RESPONSIVIDADE 320px */
-@media  (min-width: 320px) and (max-width: 320px) {
+@media  (min-width: 200px) and (max-width: 320px) {
     .card {
         width: 100%;
     }
