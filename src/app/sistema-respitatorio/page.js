@@ -3,6 +3,8 @@ import styles from './SistemaRespiratorio.module.css';
 import styleTheme from '../page.module.css';
 import { UseState } from '../statas';
 import { useState } from 'react';
+import Image from 'next/image';
+import TuberculoseRHZE from '../../../public/tuberculose-RHZE.jpeg';
 
 export default function SistemaRespiratorio() {
   const [openDisease, setOpenDisease] = useState(false);
@@ -29,7 +31,22 @@ export default function SistemaRespiratorio() {
           <div
             className={openDisease ? styles.contentOpen : styles.contentClosed}
           >
-            <p>Aqui está o conteúdo escondido!</p>
+            <p className={styles.paragraph}>A tuberculose é uma doença infecciosa causada pela bactéria Mycobacterium tuberculosis. Afeta principalmente os pulmões.</p>
+            <h3 className={styles.subtitle}>Transmissão</h3>
+            <p className={styles.paragraph}>A tuberculose é transmitida pelo ar, quando uma pessoa infectada tosse, espirra ou fala, liberando gotículas contendo a bactéria.</p>
+            <h3 className={styles.subtitle}>Sintomas</h3>
+            <p className={styles.paragraph}>Os sintomas incluem tosse persistente, febre, perda de peso, fadiga e suores noturnos.</p>
+            <h3 className={styles.subtitle}>Prevenção</h3>
+            <p className={styles.paragraph}>A prevenção inclui vacinação (BCG), evitar contato próximo com pessoas infectadas e manter um sistema imunológico saudável.</p>
+            <h3 className={styles.subtitle}>Tratamento</h3>
+            <p className={styles.paragraph}>O tratamento da tuberculose envolve o uso de antibióticos por um período prolongado, geralmente 6 meses.</p>
+            <h3 className={styles.subtitle}>Medicamentos</h3>
+            <Image
+              src={TuberculoseRHZE}
+              alt="Imagem ilustrativa dos medicamentos utilizados no tratamento da tuberculose"
+              className={styles.image}
+            />
+            <p className={styles.paragraph}>Os medicamentos mais comuns utilizados no tratamento da tuberculose incluem isoniazida, rifampicina, etambutol e pirazinamida. Abreviação: RHZE</p>
           </div>
         </div>
       </div>

@@ -16,7 +16,6 @@
 }
 .containerDisease {
   width: 100%;
-  padding-top: 30px;
   padding: 30px 10px;
 }
 
@@ -54,4 +53,17 @@
 .contentOpen {
   max-height: 200px; /* ajusta conforme necessário */
   padding: 10px;
+}
+.subtitle{
+  font-size: calc(0.70em + 1vw);
+  margin-bottom: 10px;
+}
+.paragraph{
+  font-size: calc(0.80em + 0.5vw);
+  margin-bottom: 10px;
+}
+.image{
+  width: 50%;
+  height: auto;
+  margin-top: 10px;
 }
