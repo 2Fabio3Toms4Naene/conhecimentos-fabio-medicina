@@ -47,6 +47,12 @@ export default function SistemaRespiratorio() {
               className={styles.image}
             />
             <p className={styles.paragraph}>Os medicamentos mais comuns utilizados no tratamento da tuberculose incluem isoniazida, rifampicina, etambutol e pirazinamida. Abreviação: RHZE</p>
+            <h3 className={styles.subtitle}>Como tomar corretamente</h3>
+            <p className={styles.paragraph}>Tomar em jejum (ou seja, antes de comer)</p>
+            <p className={styles.paragraph}>Evitar tomar com leite ou alimentos que contenham cálcio, pois isso pode reduzir a absorção do medicamento.</p>
+            <p className={styles.paragraph}>Sempre no mesmo horário todos os dias</p>
+            <p className={styles.paragraph}>Engolir com água</p>
+            <p className={styles.paragraph}>Não interromper o tratamento</p>
           </div>
         </div>
       </div>
