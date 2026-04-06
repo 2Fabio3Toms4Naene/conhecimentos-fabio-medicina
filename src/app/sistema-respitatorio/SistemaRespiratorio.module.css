@@ -56,11 +56,14 @@
 }
 .subtitle{
   font-size: calc(0.70em + 1vw);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .paragraph{
   font-size: calc(0.80em + 0.5vw);
   margin-bottom: 10px;
+}
+.highlight{
+    font-weight: bold;
 }
 .image{
   width: 50%;
