@@ -1,5 +1,5 @@
 .main {
-  min-height: 1200px;
+  min-height: 540px;
 }
 .container {
   width: 100%;
@@ -11,22 +11,19 @@
   padding-top: 20px;
 }
 .titlePage{
-  font-size: calc(0.7em + 1vw);
+  font-size: calc(0.9em + 1vw);
   font-weight: bold;
   padding-top: 20px;
   text-align: center;
 }
-.titleDiseases {
-  text-align: center;
-  font-size: calc(0.7em + 1.5vw);
-}
 .subtitle{
   font-size: calc(0.7em + 1vw);
   margin: 20px 0 10px;
+  
 }
 .containerDisease {
   width: 100%;
-  padding: 30px 10px;
+  padding-bottom: 10px;
 }
 
 .disease {
@@ -34,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  font-size: calc(0.8em + 1vw);
+  font-size: calc(0.7em + 1vw);
   background: none;
   color: steelblue;
 }
@@ -54,14 +51,14 @@
 }
 
 .contentClosed {
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0s;
   padding: 0 10px;
 }
 
 .contentOpen {
-  max-height: 200px; /* ajusta conforme necessário */
+  max-height: 100%; /* ajusta conforme necessário */
   padding: 10px;
 }
 .paragraph {
@@ -70,6 +67,7 @@
 }
 .highlight {
   font-weight: bold;
+  color: skyblue;
 }
 .image {
   width: 50%;

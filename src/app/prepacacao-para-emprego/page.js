@@ -6,21 +6,22 @@ import stylesJob from './page.module.css';
 import styles from '../sistema-respitatorio/SistemaRespiratorio.module.css';
 
 export default function PrepacacaoParaEmprego() {
-  const [openDisease, setOpenDisease] = useState(false);
+  const [openLesson, setOpenLesson] = useState(null);
   const { theme } = UseState();
   return (
     <main
-      className={`${stylesJob.main} ${theme ? styleTheme.dark : styleTheme.light}`}
+      className={`${styles.main} ${theme ? styleTheme.dark : styleTheme.light}`}
     >
       <h1 className={styles.titlePage}>Preparação para o emprego</h1>
+      <div className={styles.container}>
       <div className={`${styles.containerDisease} ${styles.subtitle}`}>
         <div>
           <button
             className={styles.disease}
-            onClick={() => setOpenDisease(!openDisease)}
+            onClick={() => setOpenLesson(openLesson === 'Aula01' ? null : 'Aula01')}
           >
             <span
-              className={`${styles.arrow}  ${openDisease ? styles.arrowOpen : styles.arrowClosed}`}
+              className={`${styles.arrow}  ${openLesson === 'Aula01' ?  styles.arrowOpen : styles.arrowClosed}`}
             >
               ➡️
             </span>
@@ -29,7 +30,7 @@ export default function PrepacacaoParaEmprego() {
           </button>
 
           <div
-            className={openDisease ? styles.contentOpen : styles.contentClosed}
+            className={openLesson == 'Aula01' ? styles.contentOpen : styles.contentClosed}
           >
             <p className={styles.paragraph}>
               <span className={styles.highlight}>Área de Trabalho</span> É o
@@ -309,23 +310,51 @@ export default function PrepacacaoParaEmprego() {
           </div>
         </div>
 
+        <div className={`${styles.containerDisease} ${styles.subtitle}`}>
         <div>
           <button
             className={styles.disease}
-            onClick={() => setOpenDisease(!openDisease)}
+            onClick={() => setOpenLesson(openLesson === 'Aula02' ? null : 'Aula02')}
           >
             <span
-              className={`${styles.arrow}  ${openDisease ? styles.arrowOpen : styles.arrowClosed}`}
+              className={`${styles.arrow}  ${openLesson === 'Aula02' ? styles.arrowOpen : styles.arrowClosed}`}
             >
               ➡️
             </span>
-            Tuberculose
+            Planificação e gestão de tempo de trabalho
           </button>
 
           <div
-            className={openDisease ? styles.contentOpen : styles.contentClosed}
-          ></div>
+            className={openLesson === 'Aula02' ? styles.contentOpen : styles.contentClosed}
+          >
+            
+          </div>
         </div>
+      </div>
+      {/* 
+      <div className={`${styles.containerDisease} ${styles.subtitle}`}>
+        <div>
+          <button
+            className={styles.disease}
+            onClick={() => setOpenLesson(openLesson === 'Aula02' ? null : 'Aula02')}
+          >
+            <span
+              className={`${styles.arrow}  ${openLesson === 'Aula02' ? styles.arrowOpen : styles.arrowClosed}`}
+            >
+              ➡️
+            </span>
+            Planificação e gestão de tempo de trabalho
+          </button>
+
+          <div
+            className={openLesson === 'Aula02' ? styles.contentOpen : styles.contentClosed}
+          >
+            
+          </div>
+        </div>
+      </div>
+       */}
+      </div>
       </div>
     </main>
   );

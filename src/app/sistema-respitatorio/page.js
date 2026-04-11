@@ -7,22 +7,22 @@ import Image from 'next/image';
 import TuberculoseRHZE from '../../../public/tuberculose-RHZE.jpeg';
 
 export default function SistemaRespiratorio() {
-  const [openDisease, setOpenDisease] = useState(false);
+  const [openDisease, setOpenDisease] = useState(null);
   const { theme } = UseState();
   return (
     <main
       className={`${styles.main} ${theme ? styleTheme.dark : styleTheme.light}`}
     >
-      <h1 className={styles.subtitle}>Sistema Respiratório</h1>
+      <h1 className={styles.titlePage}>Sistema Respiratório</h1>
       <div className={styles.container}>
-        <h2 className={styles.titleDiseases}>Donças do Sistema Respiratório</h2>
+        <h2 className={styles.titlePage}>Donças do Sistema Respiratório</h2>
         <div className={styles.containerDisease}>
           <button
             className={styles.disease}
-            onClick={() => setOpenDisease(!openDisease)}
+            onClick={() => setOpenDisease(openDisease === 'Tuberculose' ? null : 'Tuberculose')}
           >
             <span
-              className={`${styles.arrow}  ${openDisease ? styles.arrowOpen : styles.arrowClosed}`}
+              className={`${styles.arrow}  ${openDisease == 'Tuberculose' ? styles.arrowOpen : styles.arrowClosed}`}
             >
               ➡️
             </span>
@@ -30,7 +30,7 @@ export default function SistemaRespiratorio() {
           </button>
 
           <div
-            className={openDisease ? styles.contentOpen : styles.contentClosed}
+            className={openDisease == 'Tuberculose' ? styles.contentOpen : styles.contentClosed}
           >
             <p className={styles.paragraph}>
               A tuberculose é uma doença infecciosa causada pela bactéria
@@ -80,7 +80,31 @@ export default function SistemaRespiratorio() {
             </p>
             <p className={styles.paragraph}>Engolir com água</p>
             <p className={styles.paragraph}>Não interromper o tratamento</p>
+
           </div>
+          {/* 
+      <div className={`${styles.containerDisease} ${styles.subtitle}`}>
+        <div>
+          <button
+            className={styles.disease}
+            onClick={() => setOpenDisease(openDisease === 'Aula02' ? null : 'Aula02')}
+          >
+            <span
+              className={`${styles.arrow}  ${openDisease === 'Aula02' ? styles.arrowOpen : styles.arrowClosed}`}
+            >
+              ➡️
+            </span>
+            Planificação e gestão de tempo de trabalho
+          </button>
+
+          <div
+            className={openDisease === 'Aula02' ? styles.contentOpen : styles.contentClosed}
+          >
+            
+          </div>
+        </div>
+      </div>
+       */}
         </div>
       </div>
     </main>
