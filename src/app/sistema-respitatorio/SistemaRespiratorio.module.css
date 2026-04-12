@@ -23,7 +23,7 @@
 }
 .containerDisease {
   width: 100%;
-  padding-bottom: 10px;
+  
 }
 
 .disease {
@@ -34,6 +34,7 @@
   font-size: calc(0.7em + 1vw);
   background: none;
   color: steelblue;
+  margin-bottom: 20px;
 }
 
 .arrow {
