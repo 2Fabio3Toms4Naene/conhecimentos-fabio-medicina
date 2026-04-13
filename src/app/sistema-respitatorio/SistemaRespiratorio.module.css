@@ -10,20 +10,18 @@
   margin: auto;
   padding-top: 20px;
 }
-.titlePage{
+.titlePage {
   font-size: calc(0.9em + 1vw);
   font-weight: bold;
   padding: 20px 0 10px 0;
   text-align: center;
 }
-.subtitle{
+.subtitle {
   font-size: calc(0.7em + 1vw);
   margin: 20px 0 10px;
-  
 }
 .containerDisease {
   width: 100%;
-  
 }
 
 .disease {

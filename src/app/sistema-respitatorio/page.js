@@ -19,7 +19,11 @@ export default function SistemaRespiratorio() {
         <div className={styles.containerDisease}>
           <button
             className={styles.disease}
-            onClick={() => setOpenDisease(openDisease === 'Tuberculose' ? null : 'Tuberculose')}
+            onClick={() =>
+              setOpenDisease(
+                openDisease === 'Tuberculose' ? null : 'Tuberculose'
+              )
+            }
           >
             <span
               className={`${styles.arrow}  ${openDisease == 'Tuberculose' ? styles.arrowOpen : styles.arrowClosed}`}
@@ -30,7 +34,11 @@ export default function SistemaRespiratorio() {
           </button>
 
           <div
-            className={openDisease == 'Tuberculose' ? styles.contentOpen : styles.contentClosed}
+            className={
+              openDisease == 'Tuberculose'
+                ? styles.contentOpen
+                : styles.contentClosed
+            }
           >
             <p className={styles.paragraph}>
               A tuberculose é uma doença infecciosa causada pela bactéria
@@ -81,83 +89,152 @@ export default function SistemaRespiratorio() {
             <p className={styles.paragraph}>Engolir com água</p>
             <p className={styles.paragraph}>Não interromper o tratamento</p>
 
-            <h3 className={styles.subtitle}>Efeitos colaterais do uso do composto HRZE</h3>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Hepatotoxicidade (Lesão no Fígado): </span>
-              É o efeito grave mais preocupante. Os sintomas incluem icterícia (pele ou olhos amarelados), urina escura, náuseas/vômitos persistentes e dor abdominal intensa.
+            <h3 className={styles.subtitle}>
+              Efeitos colaterais do uso do composto HRZE
+            </h3>
+            <p className={styles.paragraph}>
+              {' '}
+              <span className={styles.highlight}>
+                Hepatotoxicidade (Lesão no Fígado):{' '}
+              </span>
+              É o efeito grave mais preocupante. Os sintomas incluem icterícia
+              (pele ou olhos amarelados), urina escura, náuseas/vômitos
+              persistentes e dor abdominal intensa.
             </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Neuropatia Periférica: </span>
-              Formigamento, dormência ou queimação nas mãos e nos pés (frequentemente associado à isoniazida).
+            <p className={styles.paragraph}>
+              {' '}
+              <span className={styles.highlight}>Neuropatia Periférica: </span>
+              Formigamento, dormência ou queimação nas mãos e nos pés
+              (frequentemente associado à isoniazida).
             </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Toxicidade Ocular: </span>
-              Alterações na visão, como visão turva ou dificuldade em distinguir cores (efeito do Etambutol).
+            <p className={styles.paragraph}>
+              {' '}
+              <span className={styles.highlight}>Toxicidade Ocular: </span>
+              Alterações na visão, como visão turva ou dificuldade em distinguir
+              cores (efeito do Etambutol).
             </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Reações de Hipersensibilidade: </span>
-               Febre, erupções cutâneas graves ou inchaço do rosto.
+            <p className={styles.paragraph}>
+              {' '}
+              <span className={styles.highlight}>
+                Reações de Hipersensibilidade:{' '}
+              </span>
+              Febre, erupções cutâneas graves ou inchaço do rosto.
             </p>
           </div>
 
           <div className={styles.containerDisease}>
-        <div>
-          <button
-            className={styles.disease}
-            onClick={() => setOpenDisease(openDisease === 'tosse' ? null : 'tosse')}
-          >
-            <span
-              className={`${styles.arrow}  ${openDisease === 'tosse' ? styles.arrowOpen : styles.arrowClosed}`}
-            >
-              ➡️
-            </span>
-            Tosse
-          </button>
+            <div>
+              <button
+                className={styles.disease}
+                onClick={() =>
+                  setOpenDisease(openDisease === 'tosse' ? null : 'tosse')
+                }
+              >
+                <span
+                  className={`${styles.arrow}  ${openDisease === 'tosse' ? styles.arrowOpen : styles.arrowClosed}`}
+                >
+                  ➡️
+                </span>
+                Tosse
+              </button>
 
-          <div
-            className={openDisease === 'tosse' ? styles.contentOpen : styles.contentClosed}
-          >
-            <p className={styles.paragraph}> <span className={styles.highlight}>Tosse </span>
-              é um reflexo natural do corpo que serve para limpar as vias respiratórias (como garganta e pulmões). Ela acontece quando algo irrita essas vias — por exemplo, poeira, muco ou microrganismos.
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Tosse bactérias </span>
-               é aquela causada por uma infecção bacteriana nas vias respiratórias, como garganta, brônquios ou pulmões.
-            </p>
+              <div
+                className={
+                  openDisease === 'tosse'
+                    ? styles.contentOpen
+                    : styles.contentClosed
+                }
+              >
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>Tosse </span>é um reflexo
+                  natural do corpo que serve para limpar as vias respiratórias
+                  (como garganta e pulmões). Ela acontece quando algo irrita
+                  essas vias — por exemplo, poeira, muco ou microrganismos.
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>Tosse bactérias </span>é
+                  aquela causada por uma infecção bacteriana nas vias
+                  respiratórias, como garganta, brônquios ou pulmões.
+                </p>
 
-            <h3 className={styles.subtitle}>Características da tosse bacteriana:</h3>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Geralmente com escarro (amarelo, verde ou até com sangue), ou tosse seca </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Pode vir com febre alta </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Dor no peito ao tossir </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Sensação de cansaço ou fraqueza </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Tosse mais de 3 dias </span>
-              
-            </p>
+                <h3 className={styles.subtitle}>
+                  Características da tosse bacteriana:
+                </h3>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Geralmente com escarro (amarelo, verde ou até com sangue),
+                    ou tosse seca{' '}
+                  </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Pode vir com febre alta{' '}
+                  </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Dor no peito ao tossir{' '}
+                  </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Sensação de cansaço ou fraqueza{' '}
+                  </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Tosse mais de 3 dias{' '}
+                  </span>
+                </p>
 
-            <h3 className={styles.subtitle}>Antibióticos mais usados</h3>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Amoxilina </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Azitromicina </span>
-              (Geralmente quando o Amoxilina não é eficaz ou em casos de alergia.)
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Eritromicina </span>
-              (Geralmente quando o Amoxilina não é eficaz ou em casos de alergia.)
-            </p>
+                <h3 className={styles.subtitle}>Antibióticos mais usados</h3>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>Amoxilina </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>Azitromicina </span>
+                  (Geralmente quando o Amoxilina não é eficaz ou em casos de
+                  alergia.)
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>Eritromicina </span>
+                  (Geralmente quando o Amoxilina não é eficaz ou em casos de
+                  alergia.)
+                </p>
 
-            <h3 className={styles.subtitle}>Tosagem para adultos</h3>
-            <p className={styles.paragraph}> <span className={styles.highlight}>3 vezes ao dia, de 8 em 8 horas, 500 mg por dose (total de 1500 mg por dia) para Amoxilina. A duração do tratamento geralmente é de 5 a 7 dias, mas pode variar dependendo da gravidade da infecção e da resposta ao tratamento. </span>
-              
-            </p>
-            <p className={styles.paragraph}> <span className={styles.highlight}>Deve se tomas após as refeições, para reduzir o risco de irritação gástrica. É importante completar todo o curso do antibiótico, mesmo que os sintomas melhorem antes do término do tratamento, para garantir a erradicação completa da infecção e prevenir a resistência bacteriana. </span>
-              
-            </p>
+                <h3 className={styles.subtitle}>Tosagem para adultos</h3>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    3 vezes ao dia, de 8 em 8 horas, 500 mg por dose (total de
+                    1500 mg por dia) para Amoxilina. A duração do tratamento
+                    geralmente é de 5 a 7 dias, mas pode variar dependendo da
+                    gravidade da infecção e da resposta ao tratamento.{' '}
+                  </span>
+                </p>
+                <p className={styles.paragraph}>
+                  {' '}
+                  <span className={styles.highlight}>
+                    Deve se tomas após as refeições, para reduzir o risco de
+                    irritação gástrica. É importante completar todo o curso do
+                    antibiótico, mesmo que os sintomas melhorem antes do término
+                    do tratamento, para garantir a erradicação completa da
+                    infecção e prevenir a resistência bacteriana.{' '}
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           {/* 
           <h3 className={styles.subtitle}></h3>
             <p className={styles.paragraph}> <span className={styles.highlight}> </span>
