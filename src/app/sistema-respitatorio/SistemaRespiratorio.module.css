@@ -13,7 +13,7 @@
 .titlePage{
   font-size: calc(0.9em + 1vw);
   font-weight: bold;
-  padding-top: 20px;
+  padding: 20px 0 10px 0;
   text-align: center;
 }
 .subtitle{

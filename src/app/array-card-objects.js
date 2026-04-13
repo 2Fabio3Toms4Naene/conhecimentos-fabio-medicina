@@ -101,7 +101,7 @@ export const arrayCardObjects = [
   {
     id: 17,
     image: preparacaoParaTrabaho,
-    title: 'Preparação para o Trabalho',
+    title: 'Preparação para o Emprego',
     link: '/prepacacao-para-emprego',
   },
 ];
