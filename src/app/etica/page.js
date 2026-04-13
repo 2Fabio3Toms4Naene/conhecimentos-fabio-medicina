@@ -629,6 +629,110 @@ export default function Etica() {
               </div>
             </div>
           </div>
+
+          <div className={styles.containerDisease}>
+        <div>
+          <button
+            className={styles.disease}
+            onClick={() => setOpenLesson(openLesson === 'Aula05' ? null : 'Aula05')}
+          >
+            <span
+              className={`${styles.arrow}  ${openLesson === 'Aula05' ? styles.arrowOpen : styles.arrowClosed}`}
+            >
+              ➡️
+            </span>
+            Manejar casos de violência baseada no género
+          </button>
+
+          <div
+            className={openLesson === 'Aula05' ? styles.contentOpen : styles.contentClosed}
+          >
+            <h3 className={styles.subtitle}>violência baseada no género</h3>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>A violência baseada no género </span>
+              inclui qualter ato que cause dano físico, sexual, psicológico, emocional, ou económico com base so sexo ou identidade de género da pessoa
+            </p>
+
+            <h3 className={styles.subtitle}>Tipos de violências baseadas no género:</h3>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>violência física </span>
+              é o uso intencional de força física para causar danos a integridade corporal ou sofrimento a outra pessoa, deixando ou não marcas visíveis. EX: Tapas, Socos, chutes, estrangulamento ou uso de arma, etc.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>violência psicológica </span>
+              é qualquer conduta que sause dano emocional, diminuição da auto estima, controle de comportamentos, crenças e decisões da vítima. EX: Ameaças, violência constante visando degradar o desemvolvimento emocional, isolamento social, críticas, clúnias, etc. 
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>violência sexual </span>
+              é a mais cruel forma de violência, do homicídio, porque é a apropicioção do corpo da mulher, homem, ou outra identidade de género. EX: 
+              
+              <span className={styles.highlight}> Coerção </span>
+              é o ato de forçar alguém a agir contra sua vontade por meio de violência, quer física, intimidação ou pressão emocional, 
+              
+              <span className={styles.highlight}> Estupro </span>
+              é quando homen pratica sexo com penetração em outra pessoa contra a vontade dela, e isso inclui a penetração vaginal, oral e anal, 
+              
+              <span className={styles.highlight}> Abuso </span>
+              é quando alguém usa seu comportamento ou infruência para causar dano ou exercer poder sobre ela, 
+              
+              <span className={styles.highlight}> Exploração </span>
+              é um fenómino social que envolve qualquer situação de jogo, ato ou relação sexual, homosexualismo, ou heterosexualmismo envolvendo uma pessoa mais velha c uma criança ou adolecente.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>violência patrimonial </span>
+              é uma forma de abuso que consiste na retenção, subtração, destruição psarcial ou total de bens, instrumentos de trabalho, documentos pessoais ou recursos económicos pessoais da vítima.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>Violência moral </span>
+              é qualquer conduta que configure calúnia, difamação ou injúria a dignidade de alguém, e é muito commum no contexto da violência doméstica ou de género. EX: chingamento, exposição da vida íntima, <span className={styles.highlight}> difamação </span> espalhamemto de fofócas, boatos ou mentiras,
+               <span className={styles.highlight}> calúnia </span> é acusar a vítima falsamente de crime, traição ou roubo, 
+               <span className={styles.highlight}> injúria </span> humilhar, chingar ou repaixar a vítima.
+            </p>
+
+            <h3 className={styles.subtitle}>Papes de género ou influêcias na violação baseada no género</h3>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}> Os Papes de género </span>
+              são construcões sociais que difinem o que é esperado de homens e mulheres.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}> </span>
+              Em sociedades patriacais esses papes reforçam a submissão feminina, o poder feninino criando terreno fértil para a violência
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>A masculinidade tóxica e desigualdade de poder </span>
+              são fatos que perpetuam a violência baseada no género.
+            </p>
+
+            <h3 className={styles.subtitle}>Cíclo da violência</h3>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>Aumento da tensão </span>
+              O agressor se irrita facilmente com a sua vítima.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>Atos violéntos </span>
+              Exploração, agressão física, verbal ou sexual.
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>Arrependimento entre parentes lua de mel </span>
+              O agressor engana a vítima com palavra e boas promessas para a vítica continuar no cíclo.
+            </p>
+
+            <h3 className={styles.subtitle}>Mitos comuns</h3>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>Ela gosta de apanhar </span>
+              
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>A violência somente contece em família pobres </span>
+              
+            </p>
+            <p className={styles.paragraph}>
+              <span className={styles.highlight}>É problema de casal, não se deve interferir </span>
+              
+            </p>
+          </div>
+        </div>
+      </div>
           {/* 
           <h3 className={styles.subtitle}></h3>
             <p className={styles.paragraph}>
