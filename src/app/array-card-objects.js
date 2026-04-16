@@ -15,6 +15,7 @@ import anatomio from '../../public/anatomio.jpeg';
 import etica from '../../public/etica.jpeg';
 import fisiologia from '../../public/fisiologia.jpg';
 import preparacaoParaTrabaho from '../../public/preparacao-para-trabaho.jpeg';
+import meiosAuxiliaresDeDiagnostico from '../../public/meios-auxiliares-de-diagnostico.png';
 
 export const arrayCardObjects = [
   {
@@ -104,4 +105,11 @@ export const arrayCardObjects = [
     title: 'Preparação para o Emprego',
     link: '/prepacacao-para-emprego',
   },
+  {
+    id: 18,
+    image: meiosAuxiliaresDeDiagnostico,
+    title: 'Meios Auxiliares de diagnóstico',
+    link: '/meios-auxiliares-de-diagnostico',
+  },
+
 ];

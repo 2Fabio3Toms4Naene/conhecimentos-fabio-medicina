@@ -212,7 +212,7 @@ export default function SistemaRespiratorio() {
                   alergia.)
                 </p>
 
-                <h3 className={styles.subtitle}>Tosagem para adultos</h3>
+                <h3 className={styles.subtitle}>Dosagem para adultos</h3>
                 <p className={styles.paragraph}>
                   {' '}
                   <span className={styles.highlight}>
