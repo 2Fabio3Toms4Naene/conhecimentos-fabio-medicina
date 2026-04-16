@@ -16,6 +16,7 @@ import etica from '../../public/etica.jpeg';
 import fisiologia from '../../public/fisiologia.jpg';
 import preparacaoParaTrabaho from '../../public/preparacao-para-trabaho.jpeg';
 import meiosAuxiliaresDeDiagnostico from '../../public/meios-auxiliares-de-diagnostico.png';
+import historiaClinica from '../../public/historia-clinica.jpeg';
 
 export const arrayCardObjects = [
   {
@@ -110,6 +111,12 @@ export const arrayCardObjects = [
     image: meiosAuxiliaresDeDiagnostico,
     title: 'Meios Auxiliares de diagnóstico',
     link: '/meios-auxiliares-de-diagnostico',
+  },
+  {
+    id: 19,
+    image: historiaClinica,
+    title: 'História clínica do utente',
+    link: '/historia-clinica-do-utente',
   },
 
 ];
