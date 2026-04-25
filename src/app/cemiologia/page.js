@@ -4,7 +4,7 @@ import styleTheme from '../page.module.css';
 import { UseState } from '../statas';
 import { useState } from 'react';
 
-export default function Fisiologia() {
+export default function Cemiologia() {
   const [openLesson, setOpenLesson] = useState(null);
   const { theme } = UseState();
   return (

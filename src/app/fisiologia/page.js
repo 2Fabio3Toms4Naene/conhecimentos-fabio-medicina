@@ -45,6 +45,32 @@ export default function Fisiologia() {
           </div>
         </div>
 
+        <div className={styles.containerDisease}>
+          <div>
+            <button
+              className={styles.disease}
+              onClick={() =>
+                setOpenLesson(openLesson === 'Aula02' ? null : 'Aula02')
+              }
+            >
+              <span
+                className={`${styles.arrow}  ${openLesson === 'Aula02' ? styles.arrowOpen : styles.arrowClosed}`}
+              >
+                ➡️
+              </span>
+              Homeosrase e sua importância
+            </button>
+
+            <div
+              className={
+                openLesson === 'Aula02'
+                  ? styles.contentOpen
+                  : styles.contentClosed
+              }
+            ></div>
+          </div>
+        </div>
+
         {/* 
         <h3 className={styles.subtitle}>
         <p className={styles.paragraph}>
