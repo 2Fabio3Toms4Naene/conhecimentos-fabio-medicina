@@ -1,6 +1,9 @@
 .main {
   min-height: 540px;
 }
+:root{
+  --colorBlue: skyblue;
+}
 .container {
   width: 100%;
   max-width: 800px;
@@ -19,6 +22,19 @@
 .subtitle {
   font-size: calc(0.7em + 1vw);
   margin: 20px 0 10px;
+}
+.subtitleh4{
+  font-size: calc(0.50em + 1vw);
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 .containerDisease {
   width: 100%;
@@ -60,16 +76,32 @@
   max-height: 100%; /* ajusta conforme necessário */
   padding: 10px;
 }
-.paragraph {
+.th, .td, .paragraph{
   font-size: calc(0.8em + 0.5vw);
+}
+.paragraph {
   margin-bottom: 10px;
 }
 .highlight {
   font-weight: bold;
-  color: skyblue;
+  color: var(--colorBlue);
 }
 .image {
   width: 50%;
   height: auto;
   margin-top: 10px;
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+}
+.th, .td{
+  border: 1px solid var(--colorBlue);
+  padding: 5px 0;
+  text-align: center;
+}
+.th{
+  color: var(--colorBlue);
 }
