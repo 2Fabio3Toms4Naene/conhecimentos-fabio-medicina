@@ -14,7 +14,7 @@ export default function ComponentIntroduction({ theme }) {
           width={50}
           height={50}
         />
-        <h1 className={styles.title}>Orgamize seu conhecimento</h1>
+        <h1 className={styles.title}>Organize seu conhecimento</h1>
       </div>
       <p className={styles.description}>
         Guarde, organize e acesse seu conhecimento de forma simples e eficiente.

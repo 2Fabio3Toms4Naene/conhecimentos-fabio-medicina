@@ -17,6 +17,7 @@ import fisiologia from '../../public/fisiologia.jpg';
 import preparacaoParaTrabaho from '../../public/preparacao-para-trabaho.jpeg';
 import meiosAuxiliaresDeDiagnostico from '../../public/meios-auxiliares-de-diagnostico.png';
 import cemiologia from '../../public/historia-clinica.jpeg';
+import primeirosSocorros from '../../public/primeirosSocorros.jpeg'
 
 export const arrayCardObjects = [
   {
@@ -117,6 +118,12 @@ export const arrayCardObjects = [
     image: cemiologia,
     title: 'cemiologia',
     link: '/cemiologia',
+  },
+  {
+    id: 20,
+    image: primeirosSocorros,
+    title: 'Primeiros Socorros',
+    link: '/primeiros-socorros',
   },
 
 ];
